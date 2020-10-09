@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.buttons, .container .calculator .keyboard .number, .container .calculator .keyboard .operator, .container .calculator .keyboard .empty {
+  width: 50px;
+  height: 50px;
+  margin: 15px;
+  float: left;
+  border-radius: 50%;
+  border-width: 0;
+  font-weight: bold;
+  font-size: 15px;
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+
+.buttons:focus, .container .calculator .keyboard .number:focus, .container .calculator .keyboard .operator:focus, .container .calculator .keyboard .empty:focus {
+  outline: 0;
+}
+
+body {
+  background-color: #1a1a1a;
+  font-family: 'Poppins', sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .calculator {
+  width: 320px;
+  height: 520px;
+  margin: auto;
+  position: relative;
+  border-radius: 40px;
+  background-color: #1a1a1a;
+  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3), -4px -4px 10px rgba(58, 58, 58, 0.2);
+          box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3), -4px -4px 10px rgba(58, 58, 58, 0.2);
+}
+
+.container .calculator .result {
+  height: 120px;
+  color: #bfbfbf;
+  overflow: hidden;
+}
+
+.container .calculator .result .history {
+  text-align: right;
+  height: 20px;
+  margin: 0 20px;
+  padding-top: 20px;
+}
+
+.container .calculator .result .history .history-value {
+  font-size: 15px;
+  color: #919191;
+}
+
+.container .calculator .output {
+  text-align: right;
+  height: 60px;
+  margin: 10px 20px;
+}
+
+.container .calculator .output .output-value {
+  font-size: 30px;
+}
+
+.container .calculator .keyboard {
+  height: 400px;
+}
+
+.container .calculator .keyboard .number, .container .calculator .keyboard .operator {
+  cursor: pointer;
+  background-color: #1a1a1a;
+  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3), -4px -4px 10px rgba(58, 58, 58, 0.2);
+          box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3), -4px -4px 10px rgba(58, 58, 58, 0.2);
+  color: #5e5e5e;
+}
+
+.container .calculator .keyboard .number:active, .container .calculator .keyboard .operator:active {
+  color: #494949;
+  font-size: 13px;
+  -webkit-box-shadow: inset 5px 5px 11px #121212,  inset -5px -5px 11px #222222;
+          box-shadow: inset 5px 5px 11px #121212,  inset -5px -5px 11px #222222;
+}
+
+.container .calculator .keyboard .empty {
+  background-color: #1a1a1a;
+}
+
+.container footer {
+  text-align: center;
+}
+
+.container footer a {
+  color: #5e5e5e;
+}
+/*# sourceMappingURL=style.css.map */
